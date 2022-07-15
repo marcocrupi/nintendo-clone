@@ -221,22 +221,19 @@
 }
 
 :root {
-  --firstColor: #C8351C;
-  --secondColor: #FFFFFF;
+  --firstColor: #c8351c;
+  --secondColor: #ffffff;
   --thirdColor: #484848;
   --gradient: linear-gradient(45deg, var(--firstColor), var(--secondColor));
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
   font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: var(--thirdColor);
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
