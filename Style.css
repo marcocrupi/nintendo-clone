@@ -474,11 +474,74 @@
 
 .wrapper .bottom_nav li:hover ul {
   display: block;
+  position: fixed;
+  top: 96px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  margin: 0px auto;
+  background-color: rgb(255, 255, 255);
+  height: 260.766px;
+  overflow: hidden;
+  transition: height 200ms ease-in-out 0s;
 }
 
-.wrapper .banner img {
+.menuBackground {
   width: 100%;
-  height: 400px;
+  height: 64px;
+  background-color: rgb(230, 0, 18);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.menuBackground svg {
+  filter: invert(100%) sepia(44%) saturate(100%) hue-rotate(359deg)
+    brightness(200%) contrast(100%);
+}
+
+.fancyBorder {
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  background-size: auto 14px;
+  background-repeat: repeat-x;
+  z-index: 1;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDVweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgNDUgMTQiIHZlcnNpb249IjEuMSIKICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5TdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuPC90aXRsZT4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuIiBmaWxsPSIjRTYwMDEyIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNNDUsMCBMMCwwIEwwLDEzLjc3MzY4IEMxLjMzMzAyMDAxLDEzLjgzNzcxOTMgMi42NDkxNDAxMywxMy40NTM5MDE4IDMuNzM4NzcsMTIuNjgzMzUgTDE5LjI4NDQ4LDEuNjI4NjYgQzIxLjM2NjIzOTQsMC4xNDgzMTg1OTggMjQuMTU3MDEwNiwwLjE0ODMxODU5OCAyNi4yMzg3NywxLjYyODY2IEw0MS43ODQ0OCwxMi42ODMzNSBDNDIuNzI4MzU2MywxMy4zNTAwNDM4IDQzLjg0NTI4NSwxMy43Mjg3NzYgNDUsMTMuNzczNjggTDQ1LDAgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+  bottom: -14px;
+}
+
+.subM {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1440px;
+  min-width: calc(1024px - 2rem);
+  margin: 0px auto;
+}
+
+.wrapper .bottom_nav ul li ul li a {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.wrapper .bottom_nav ul li ul li a.firstA {
+  font-weight: bold;
+}
+
+.wrapper .bottom_nav ul li ul li a.firstA svg {
+  filter: invert(14%) sepia(40%) saturate(5000%) hue-rotate(337deg)
+    brightness(80%) contrast(143%);
 }
 
 /* MEDIA QUERIES */
@@ -584,6 +647,4 @@
     position: relative;
     color: inherit;
   }
-
 }
-
