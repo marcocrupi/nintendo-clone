@@ -405,29 +405,19 @@
 }
 
 .wrapper .top_nav .right ul li {
-  margin: 0 12px;
-}
-
-.wrapper .top_nav .right ul li:last-child {
-  background: #37a000;
-  margin-right: 0;
-  border-radius: 2px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.wrapper .top_nav .right ul li:hover:last-child {
-  background: #494949;
+  margin: 0 15px;
 }
 
 .wrapper .top_nav .right ul li a {
-  display: block;
-  padding: 8px 10px;
-  color: #666666;
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  color: #000000;
+  font-weight: bold;
 }
 
-.wrapper .top_nav .right ul li:last-child a {
-  color: #fff;
+.wrapper .top_nav .right ul li a svg {
+  margin-right: 8px;
 }
 
 .wrapper .bottom_nav {
