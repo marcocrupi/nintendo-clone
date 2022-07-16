@@ -240,6 +240,10 @@
   text-decoration: none;
 }
 
+.mobileNav {
+  display: none;
+}
+
 .wrapper .top_nav {
   display: flex;
   -webkit-box-pack: justify;
@@ -477,22 +481,143 @@
   height: 400px;
 }
 
-/* media queries */
+/* MEDIA QUERIES */
 
 @media (max-width: 1108px) {
+
+  .wrapper .top_nav .top_nav_left_logo svg {
+    width: 5.8rem;
+    height: 100%;
+    margin-left: 1rem;
+  }
+
   .wrapper .bottom_nav {
-    display:none;
-  } 
+    display: none;
+  }
 
   .wrapper .top_nav_left_search {
-    display:none;
-  } 
+    display: none;
+  }
 
   .wrapper .right {
-    display:none;
-  } 
+    display: none;
+  }
 
   .wrapper .top_nav {
     background-color: var(--firstColor);
   }
+
+  .hoZzOf {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    margin-bottom: calc(env(safe-area-inset-bottom) + 1.5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    height: 58px;
+    width: 96%;
+    max-width: 440px;
+  }
+
+  .gRKNeu {
+    position: relative;
+    height: 58px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+  }
+
+  .lbIElJ {
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    position: relative;
+    height: 58px;
+  }
+
+  .fXJLA-D {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+    transition: all 200ms ease-in-out 0s;
+  }
+
+  .fXJLA-D:hover {
+    filter: invert(15%) sepia(64%) saturate(7023%) hue-rotate(348deg) brightness(84%) contrast(117%);
 }
+
+
+
+  .fHJMos {
+    margin-top: -1rem;
+  }
+
+  .jPkLqJ {
+    width: 60px;
+    height: 60px;
+    background: rgb(230, 0, 18);
+    border: none;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .jPkLqJ svg {
+    filter: invert(100%) sepia(44%) saturate(100%) hue-rotate(359deg)
+      brightness(200%) contrast(100%);
+  }
+
+  .hjSHOH {
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    color: inherit;
+  }
+
+  
+
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    appearance: button;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 429px) {
+  .gCvsyP {
+    font-size: 1.3125rem;
+}
+}
+
