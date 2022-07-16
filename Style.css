@@ -481,7 +481,7 @@
   z-index: 1000;
   margin: 0px auto;
   background-color: rgb(255, 255, 255);
-  height: 260.766px;
+  height: 340px;
   overflow: hidden;
   transition: height 200ms ease-in-out 0s;
 }
@@ -497,7 +497,32 @@
   justify-content: center;
   color: rgb(255, 255, 255);
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.buttonCool {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttonCool button {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgb(230, 0, 18);
+  border-width: 1px;
+  border-style: solid;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.buttonCool button:hover {
+  background-color: rgba(255, 0, 0, 0.405);
+  color: #ff0000;
+  border-style: solid;
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.25rem;
 }
 
 .menuBackground svg {
