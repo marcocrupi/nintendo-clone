@@ -313,7 +313,6 @@
   min-width: 300px;
   line-height: 1.5;
   padding: 0px;
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .wrapper .top_nav .left .search_bar input[type="text"]:focus {
@@ -329,7 +328,7 @@
 .dropdown {
   color: rgb(72, 72, 72);
   margin-left: 0px;
-  transition: color 200ms ease-in-out 25ms;
+
   width: auto;
   min-width: max-content;
   text-align: center;
@@ -347,7 +346,6 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .dropdown .dropbtn svg {
@@ -357,13 +355,11 @@
 
 .dropdown .dropbtn:hover {
   color: #ff0000;
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .dropdown .dropbtn:hover svg {
   filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
     brightness(96%) contrast(119%);
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .dropdown-content {
@@ -391,7 +387,6 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .wrapper .top_nav .right ul {
@@ -416,36 +411,66 @@
 
 .wrapper .top_nav .right ul li a:hover {
   color: #ff0000;
-  transition: color 200ms ease-in-out 25ms;
 }
 
 .wrapper .top_nav .right ul li a:hover svg {
   filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
     brightness(96%) contrast(119%);
-  transition: color 200ms ease-in-out 25ms;
 }
-
 
 .wrapper .bottom_nav {
   width: 100%;
-  background: #f9f9f9;
-  height: 45px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  height: 44px;
   padding: 0 50px;
+  display: flex;
+  align-items: center;
 }
 
-.wrapper .bottom_nav ul {
+.wrapper .bottom_nav .mainUl {
   width: 100%;
-  height: 45px;
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
 .wrapper .bottom_nav ul li a {
+  display: flex;
+  align-items: center;
   color: #494949;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.wrapper .bottom_nav ul li a svg {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.wrapper .bottom_nav ul li a:hover {
+  color: #ff0000;
+}
+
+.wrapper .bottom_nav ul li a:hover svg {
+  filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
+    brightness(96%) contrast(119%);
+}
+
+.wrapper .bottom_nav li ul {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.wrapper .bottom_nav li:hover ul {
+  display: block;
 }
 
 .wrapper .banner img {
