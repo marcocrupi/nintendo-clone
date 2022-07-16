@@ -283,7 +283,7 @@
   display: flex;
   align-items: center;
   width: 28.125rem;
-  font-size: 0.875rem;  
+  font-size: 0.875rem;
 }
 
 .wrapper .top_nav_left_search .formStyle .inputStyle {
@@ -356,19 +356,13 @@
 }
 
 .dropdown .dropbtn:hover {
-  font-size: 0.9rem;
-  border: none;
-  outline: none;
   color: #ff0000;
-  /* padding: 14px 16px; */
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
   transition: color 200ms ease-in-out 25ms;
 }
 
 .dropdown .dropbtn:hover svg {
-  filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg) brightness(96%) contrast(119%);
+  filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
+    brightness(96%) contrast(119%);
   transition: color 200ms ease-in-out 25ms;
 }
 
@@ -419,6 +413,18 @@
 .wrapper .top_nav .right ul li a svg {
   margin-right: 8px;
 }
+
+.wrapper .top_nav .right ul li a:hover {
+  color: #ff0000;
+  transition: color 200ms ease-in-out 25ms;
+}
+
+.wrapper .top_nav .right ul li a:hover svg {
+  filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
+    brightness(96%) contrast(119%);
+  transition: color 200ms ease-in-out 25ms;
+}
+
 
 .wrapper .bottom_nav {
   width: 100%;
