@@ -688,6 +688,20 @@
   transition: 0.5s;
 }
 
+.buttonCoolGray button {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgb(150, 150, 150);
+  border-width: 1px;
+  border-style: solid;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  height: 5rem;
+  width: 8rem;
+}
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1108px) {
