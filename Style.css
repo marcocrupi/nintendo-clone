@@ -569,7 +569,6 @@
   -webkit-box-pack: center;
   justify-content: center;
   gap: 1.75rem;
-  
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 1440px;
@@ -659,7 +658,7 @@
 }
 
 .marginAdd {
-  margin-right: 0.8rem ;
+  margin-right: 0.8rem;
 }
 
 .buttonCoolSwitch button {
@@ -704,7 +703,6 @@
   height: 5rem;
   width: 8rem;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -809,4 +807,81 @@
     position: relative;
     color: inherit;
   }
+
+  /* INIZIO STILI PER IL MOBILE */
+
+  #toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--thirdColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+  }
+
+  #toggle:hover {
+    background: var(--firstColor);
+    transition: 0.3s;
+  }
+
+  #toggle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+
+  #toggle::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(3px);
+    transition: 0.2s;
+  }
+
+  #toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  #toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  #toggle.active {
+    background: var(--thirdColor);
+  }
+
+  .mobileSubMenu {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /* overflow: auto; */
+    bottom: 55px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .mobileSubMenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* FINE STILI PER IL MOBILE */
 }
