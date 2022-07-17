@@ -858,16 +858,21 @@
   }
 
   #toggle.active {
-    background: var(--thirdColor);
+    background: var(--firstColor);
+    transition: 0.3s;
   }
 
   .mobileSubMenu {
     display: none;
-    position: fixed;
+    right: 0rem;
+    height: 35rem;
+    padding-bottom: 30px;
+    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
+    width: 100%;
     /* overflow: auto; */
-    bottom: 55px;
+    bottom: 35px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: -1;
   }
@@ -882,6 +887,8 @@
     text-decoration: none;
     display: block;
   }
+
+  
 
   /* FINE STILI PER IL MOBILE */
 }
