@@ -463,6 +463,21 @@
   color: #ff0000;
 }
 
+/* FUNZIONE DA IMPLEMENTARE DI OSCURAMENTO DELLO SCHERMO SUI MENU */
+/* .blackScreen {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 200ms ease 0s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+} */
+
+
 .wrapper .bottom_nav ul li a:hover svg {
   filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
     brightness(96%) contrast(119%);
@@ -808,8 +823,6 @@
     color: inherit;
   }
 
-  /* INIZIO STILI PER IL MOBILE */
-
   #toggle {
     position: relative;
     top: 0;
@@ -863,16 +876,18 @@
   }
 
   .mobileSubMenu {
+    padding-top: 40px;
     display: none;
-    right: 0rem;
-    height: 35rem;
+    right: -1px;
+    height: 34rem;
     padding-bottom: 30px;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     width: 100%;
     /* overflow: auto; */
-    bottom: 35px;
+    bottom: 0px;
+    border-radius: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: -1;
   }
@@ -888,7 +903,62 @@
     display: block;
   }
 
-  
+  .mobileLink {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1px;
+    padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      background-color: rgb(255, 255, 255);
+  }
 
-  /* FINE STILI PER IL MOBILE */
+  .mobileLink a {
+    padding: 12px 8px;
+  }
+
+  .mobileLink a:hover {
+    color: var(--firstColor);
+  }
+  
+  .mobileLink svg {
+    filter: invert(14%) sepia(40%) saturate(5000%) hue-rotate(337deg)
+      brightness(80%) contrast(143%);
+  }
+
+  .boxBottom {
+    margin-top: 1rem;
+  }
+
+  .mobileLinkBottom {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1px;
+    padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .mobileLinkBottom a {
+    padding: 12px 8px;
+  }
+
+  .mobileLinkBottom a:hover {
+    color: var(--firstColor);
+  }
+  
+  .mobileLinkBottom svg {
+    filter: invert(14%) sepia(40%) saturate(5000%) hue-rotate(337deg)
+      brightness(80%) contrast(143%);
+  }
+
 }

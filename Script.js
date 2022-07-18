@@ -19,7 +19,7 @@ function myFunction() {
     }
   }
 
-// CODICE JAVASCRIPT PER IL TOOGLE
+// CODICE JAVASCRIPT PER ANIMAZIONE TOGGLE
 const header = document.getElementById("mobileNav");
 const toggle = document.getElementById("toggle");
 const navbar = document.getElementById("mobileNavBar");
