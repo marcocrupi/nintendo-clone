@@ -221,7 +221,7 @@
 }
 
 :root {
-  --firstColor: #c8351c;
+  --firstColor: rgb(230, 0, 18);
   --secondColor: #ffffff;
   --thirdColor: #484848;
   --gradient: linear-gradient(45deg, var(--firstColor), var(--secondColor));
@@ -236,4 +236,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
