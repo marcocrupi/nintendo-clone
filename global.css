@@ -231,7 +231,7 @@
   font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   line-height: 1.4;
-  color: var(--thirdColor);
+  /*color: var(--thirdColor);*/
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;

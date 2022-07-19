@@ -1,0 +1,36 @@
+.social {
+    background-color: #e60012;
+    padding: 2.25rem 1rem;
+    color: #fff;
+    display: grid;
+    place-items: center end;
+    -webkit-box-align: center;
+}
+
+@media (min-width: 768px) {
+    footer > section > div {
+        width: 100%;
+        justify-items: end;
+        grid-template-columns: auto repeat(4, 58px);
+    }
+}
+
+.logo {
+
+    display: grid;
+    place-items: center;
+    -webkit-box-align: center;
+    
+}
+
+.logo > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .logo > a:first-child {
+        justify-self: center;
+        grid-column: span 1 / auto;
+    }
+}
