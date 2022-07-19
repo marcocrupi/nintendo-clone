@@ -758,6 +758,28 @@
       brightness(80%) contrast(143%);
   }
 
+  .mobileLinkBottomLanguage {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .mobileLinkBottomLanguage a {
+    padding: 12px 8px;
+  }
+
+  .mobileLinkBottomLanguage a:hover {
+    color: var(--firstColor);
+  }
+
   /* ACCORDION */
 
   /* body {
