@@ -222,8 +222,8 @@
 }
 
 /* FUNZIONE DA IMPLEMENTARE DI OSCURAMENTO DELLO SCHERMO SUI MENU */
-/* .blackScreen {
-  visibility: visible;
+.blackScreen {
+  visibility: hidden;
   opacity: 1;
   transition: opacity 200ms ease 0s;
   position: fixed;
@@ -233,7 +233,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
-} */
+} 
 
 .wrapper .bottom_nav ul li a:hover svg {
   filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
@@ -676,6 +676,10 @@
 
   .show {
     display: block;
+  }
+
+  .showBlackScreen {
+    display: visible;
   }
 
   .mobileSubMenu a {
