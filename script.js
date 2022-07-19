@@ -5,19 +5,19 @@ function myFunction() {
   }
   
   // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    console.log("test");
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("mobileSubMenu");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+  // window.onclick = function(event) {
+  //   console.log("test");
+  //   if (!event.target.matches('.dropbtn')) {
+  //     var dropdowns = document.getElementsByClassName("mobileSubMenu");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   } 
+  // }
 
 // CODICE JAVASCRIPT PER ANIMAZIONE TOGGLE
 const header = document.getElementById("mobileNav");
