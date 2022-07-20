@@ -2,6 +2,7 @@
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myOverlay").style.display = "none";
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -23,6 +24,8 @@ function myFunction() {
 const header = document.getElementById("mobileNav");
 const toggle = document.getElementById("toggle");
 const navbar = document.getElementById("mobileNavBar");
+const subMenuMobile = document.getElementById("myDropdown");
+const searchB = document.getElementById("searchButton");
 
 document.onclick = function (e) {
   if (
@@ -32,7 +35,7 @@ document.onclick = function (e) {
   ) {
     toggle.classList.remove("active");
     navbar.classList.remove("active");
-  }
+  } 
 };
 
 toggle.onclick = function () {
@@ -43,6 +46,7 @@ toggle.onclick = function () {
 // FULL SCREEN SEARCH BOX
 function openSearch() {
   document.getElementById("myOverlay").style.display = "block";
+  subMenuMobile.classList.remove("show");
 }
 
 function closeSearch() {
