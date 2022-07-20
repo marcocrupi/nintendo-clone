@@ -678,10 +678,6 @@
     display: block;
   }
 
-  .showBlackScreen {
-    display: visible;
-  }
-
   .mobileSubMenu a {
     color: black;
     padding: 12px 16px;
