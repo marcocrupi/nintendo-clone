@@ -39,3 +39,21 @@ toggle.onclick = function () {
   toggle.classList.toggle("active");
   navbar.classList.toggle("active");
 };
+
+// FULL SCREEN SEARCH BOX
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// BLACK SCREEN
+function openBlack() {
+  document.getElementById("blackScreen").style.visibility = "visible";
+}
+
+function closeBlack() {
+  document.getElementById("blackScreen").style.visibility = "hidden";
+}
