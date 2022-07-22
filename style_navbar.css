@@ -2,6 +2,10 @@
   display: none;
 }
 
+.overlay {
+  display: none;
+}
+
 .wrapper .top_nav {
   display: flex;
   -webkit-box-pack: justify;
@@ -222,8 +226,8 @@
 }
 
 /* FUNZIONE DA IMPLEMENTARE DI OSCURAMENTO DELLO SCHERMO SUI MENU */
-/* .blackScreen {
-  visibility: visible;
+#blackScreen {
+  visibility: hidden;
   opacity: 1;
   transition: opacity 200ms ease 0s;
   position: fixed;
@@ -233,7 +237,7 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
-} */
+} 
 
 .wrapper .bottom_nav ul li a:hover svg {
   filter: invert(26%) sepia(96%) saturate(7426%) hue-rotate(359deg)
@@ -792,7 +796,7 @@
     margin: 10vh auto;
 } */
 
-  input {
+.accordionInput {
     display: none;
   }
 
@@ -840,83 +844,94 @@
     transition: max-height, 0.5s;
   }
 
-  input:checked ~ .content {
+  .accordionInput:checked ~ .content {
     max-height: 400px;
     transition: max-height, 1s;
   }
 
-  input:checked ~ label .cross:before {
+  .accordionInput:checked ~ label .cross:before {
     transform: rotate(180deg);
   }
 
-  input:checked ~ label .cross:after {
+  .accordionInput:checked ~ label .cross:after {
     transform: rotate(0deg);
   }
 
-  .questions {
-    margin-top: 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height, 0.5s;
-  }
-
-  .questions label {
+  /* FULL SCREEN SEARCH BOX - START */
+ 
+  /* .openBtn {
+    background: #f1f1f1;
     border: none;
-    box-shadow: none;
-    margin: 0;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+  
+  .openBtn:hover {
+    background: rgb(255, 0, 0);
   }
-
-  input:checked ~ .questions {
-    max-height: 400px;
-    border-bottom: 2px solid #3e474f;
-    transition: 1s;
+  
+  .overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
   }
-
-  /*----------tool-tip------------*/
-
-  .tip {
-    color: #f03768;
-    cursor: help;
+  
+  .overlay-content {
     position: relative;
-    overflow: visible;
-    font-family: monospace;
-    font-size: 1.3em;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
   }
-
-  .tip:before,
-  .tip:after {
+  
+  .overlay .closebtn {
     position: absolute;
-    opacity: 0;
-    z-index: -100;
-    transform: translateY(-30%);
-    transition: 0.4s;
-  }
-
-  .tip:before {
-    content: "";
-    border-style: solid;
-    border-width: 0.8em 0.5em 0 0.5em;
-    border-color: #3e474f transparent transparent transparent;
-    transform: translateY(-200%);
-    bottom: 90%;
-    left: 50%;
-  }
-
-  .tip:after {
-    content: attr(data-tip);
-    background: #3e474f;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
     color: white;
-    width: 150px;
-    padding: 10px;
-    font-size: 0.8em;
-    bottom: 150%;
-    left: -50%;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  #searchInputMobile {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  #searchInputMobile:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
   }
 
-  .tip:hover:before,
-  .tip:hover:after {
-    opacity: 1;
-    z-index: 100;
-    transform: scaleY(1);
-  }
+  /* FULL SCREEN SEARCH BOX - END */
 }
