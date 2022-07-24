@@ -1,20 +1,24 @@
 .parte_giorgia {
   background-color: #ffffff;
+  
 }
 
 h1 {
   font-size: xx-large;
-  padding-top: 5%;
+
 }
 
+
+
 .switch {
-  width: 1050px;
+  width: 100%;
+  height: 100%;
 }
 
 .titolo_gaming_system {
   color: #484848;
   font-weight: bold;
-  padding-top: 2%;
+  
 }
 
 .sottotitolo_gaming_system {
@@ -25,13 +29,12 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 5%;
   font-size: xx-large;
 }
 
 .button_gaming_system {
   padding-left: 3%;
-  padding-top: 5%;
+  
 }
 
 /* color bianco non viene applicato*/
@@ -69,6 +72,7 @@ h1 {
 }
 
 .gruppo_sottotitolo_gs {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
 }
@@ -76,7 +80,12 @@ h1 {
 .blocco_giorgia {
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* dimensione massima mantiene la responsività e regola l'immagine*/
+  max-width: 71.5rem;
+  
 }
 
 #id_titolo_gs {
@@ -458,7 +467,7 @@ h1 {
   .sezioni_news {
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows: ;
+    
   }
 
   .sezione1_news {
@@ -798,7 +807,7 @@ h1 {
   .sezioni_news {
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows: ;
+    
   }
 
   .sezione1_news {
