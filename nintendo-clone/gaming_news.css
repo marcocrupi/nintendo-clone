@@ -467,7 +467,7 @@ h1 {
   .sezioni_news {
     display: grid;
     grid-template-columns: 2;
-    
+
   }
 
   .sezione1_news {
