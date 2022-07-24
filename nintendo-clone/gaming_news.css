@@ -8,8 +8,6 @@
   
   }
   
-  
-  
   .switch {
     width: 100%;
     height: 100%;
@@ -127,6 +125,8 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin: 30px;
+    font-size: 100%;
   }
   
   .sottotitolo_news1{
@@ -237,6 +237,7 @@
     color: #e60012;
     font-weight: bold;
     text-decoration: underline;
+    
   }
   
   .read_news1:hover {
@@ -312,26 +313,30 @@
   
   .sezioni_mini_news {
     display: flex;
-    padding-left: 13%;
-    padding-top: 2.5%;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    margin: 100px 0px 0px 0px;
   }
+
   
-  .sezione3_news {
-    padding: 2%;
+
+  .sezione3_news{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
   }
-  
-  .sezione4_news {
-    padding: 2%;
+
+  .scritte_news2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 240px;
   }
-  
-  .sezione5_news {
-    padding: 2%;
-  }
-  
-  .sezione6_news {
-    padding: 2%;
-  }
-  
   .pokemon_news {
     border-radius: 2%;
     width: 250px;
@@ -407,24 +412,14 @@
   .bottone_news {
     display: flex;
     flex-direction: column;
-    padding-left: 15%;
-    padding-top: 1%;
+    
   }
+
   
-  .descrizione_news3 {
-    padding-top: 6%;
+  
+  .button_newsfinale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  .descrizione_news4 {
-    padding-top: 6%;
-  }
-  
-  .descrizione_news5 {
-    padding-top: 6%;
-  }
-  
-  .descrizione_news6 {
-    padding-top: 6%;
-  }
-  
   
