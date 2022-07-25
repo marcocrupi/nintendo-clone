@@ -265,17 +265,18 @@
   }
 
   .section-fs-digital ul li {
-    flex-basis: 28%;
+    flex-basis: 38%;
   }
 
   .section-fs-digital .section-fs-card {
-    min-height: 320px;
+    min-height: 335px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+
   .section-fs-digital ul li {
-    flex-basis: 25%;
+    flex-basis: 28%;
   }
 
   .section-fs-digital ul {
@@ -297,26 +298,26 @@
   }
 
   /* Scrollbar height */
-.section-fs-digital ul::-webkit-scrollbar {
-  height: 5px;
-  cursor: pointer;
-}
+  .section-fs-digital ul::-webkit-scrollbar {
+    height: 5px;
+    cursor: pointer;
+  }
 
-/* Scrollbar Track */
-.section-fs-digital ul::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 2px;
-}
- 
-/* Scrollbar Handle */
-.section-fs-digital ul::-webkit-scrollbar-thumb {
-  background: rgba(230, 0, 18, 0.75); 
-  border-radius: 2px;
-  cursor: pointer;
-}
+  /* Scrollbar Track */
+  .section-fs-digital ul::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 2px;
+  }
+  
+  /* Scrollbar Handle */
+  .section-fs-digital ul::-webkit-scrollbar-thumb {
+    background: rgba(230, 0, 18, 0.75); 
+    border-radius: 2px;
+    cursor: pointer;
+  }
 
-/* Scrollbar Handle on hover */
-.section-fs-digital ul::-webkit-scrollbar-thumb:hover {
-  background: rgb(230, 0, 18);
-}
+  /* Scrollbar Handle on hover */
+  .section-fs-digital ul::-webkit-scrollbar-thumb:hover {
+    background: rgb(230, 0, 18);
+  }
 }
