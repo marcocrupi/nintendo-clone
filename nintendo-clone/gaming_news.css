@@ -16,6 +16,7 @@
   .titolo_gaming_system {
     color: #484848;
     font-weight: bold;
+   
     
   }
   
@@ -96,6 +97,7 @@
     justify-content: center
   }
 
+  
   .sezioni_news {
     display: flex;
     flex-direction: row;
@@ -120,13 +122,10 @@
   .titolo_news {
     color: #484848;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 30px;
-    font-size: 100%;
+    margin:30px auto;
+    font-size: xx-large;
+    
+    
   }
   
   .sottotitolo_news1{
@@ -135,9 +134,9 @@
     
   }
 
-  .titolo_news1{
+  .h1_news{
     display: flex;
-   
+    font-size: xx-large
   }
 
   .sottotitolo_news1{
@@ -212,7 +211,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 560px;
+    max-width: 560px;
     }
 
   .data_news1{
@@ -261,7 +260,7 @@
   .read_news3 {
     color: #e60012;
     font-weight: bold;
-    padding-top: 6%;
+    
     text-decoration: underline;
   }
   
@@ -269,6 +268,10 @@
     color: #ac000d;
     font-weight: bold;
     text-decoration: underline;
+  }
+
+  .link_news3{
+    margin: 30px auto;
   }
   
   .read_news4 {
@@ -335,7 +338,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 240px;
+    max-width: 240px;
   }
   .pokemon_news {
     border-radius: 2%;
@@ -409,17 +412,11 @@
     transition: 0.5s;
   }
   
-  .bottone_news {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  
   
   .button_newsfinale{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto 
   }
   
+ 
