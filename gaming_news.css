@@ -2,434 +2,433 @@
     background-color: #ffffff;
   }
   
-  .titoli_giorgia {
-    font-size: xx-large;
+.titoli_giorgia {
+  font-size: xx-large;
   
-  }
+}
   
-  .switch {
-    width: 100%;
-    height: 100%;
-  }
+.switch {
+  width: 100%;
+  height: 100%;
+}
   
-  .titolo_gaming_system {
-    color: #484848;
-    font-weight: bold;
+.titolo_gaming_system {
+  color: #484848;
+  font-weight: bold; 
+}
+  
+.sottotitolo_gaming_system {
+  color: #484848;
+  font-weight: bold;
+  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: xx-large;
+  margin: 0px 0px 30px 0px;
+}
+  
+.button_gaming_system {
+  padding-left: 3%;
+  margin: 0px 0px 30px 0px;
+} 
+  
+  /* color bianco non viene applicato*/
+.button_gs {
+  background-color: #e60012;
+  color: #fffff7;
+  border-color: #e60012;
+  width: 140px;
+  height: 46px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}  
    
-    
-  }
+.button_gs h3 {
+  color: #fffff7;
+}  
   
-  .sottotitolo_gaming_system {
-    color: #484848;
-    font-weight: bold;
-    display: inline;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: xx-large;
-    margin: 0px 0px 30px 0px;
-  }
+/* color bianco non viene applicato*/
+.button_gs:hover {
+  background-color: #ac000d;
+  color: #fffff7 !important;
+  border-color: #ac000d;
+  width: 145px;
+  height: 51px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.gruppo_sottotitolo_gs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.blocco_giorgia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* dimensione massima mantiene la responsività e regola l'immagine*/
+  max-width: 71.5rem;
   
-  .button_gaming_system {
-    padding-left: 3%;
-    margin: 0px 0px 30px 0px;
-    
-  }
+} 
+
+#id_titolo_gs {
+  display: flex;
+}  
   
-  /* color bianco non viene applicato*/
-  .button_gs {
-    background-color: #e60012;
-    color: #fffff7;
-    border-color: #e60012;
-    width: 140px;
-    height: 46px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
+/*INIZIO PARTE NEWS 1 e 2*/
   
-  .button_gs h3 {
-      color: #fffff7;
-  }
+.blocco_news{
+  display: flex;
+  justify-content: center
+}
+
+
+.sezioni_news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+}
+
+.sezione1_news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.sezione2_news{
+  display: flex;
+  flex-direction: column;
+}
+
+.titolo_news {
+  color: #484848;
+  font-weight: bold;
+  margin:30px auto;
+  font-size: xx-large;
   
-  /* color bianco non viene applicato*/
-  .button_gs:hover {
-    background-color: #ac000d;
-    color: #fffff7 !important;
-    border-color: #ac000d;
-    width: 145px;
-    height: 51px;
-    font-weight: bold;
-    font-size: 15px;
-    transition: 0.5s;
-  }
   
-  .gruppo_sottotitolo_gs {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-  }
+}
+
+.sottotitolo_news1{
+  display: flex;
+  flex-direction: column;
   
-  .blocco_giorgia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* dimensione massima mantiene la responsività e regola l'immagine*/
-    max-width: 71.5rem;
-    
-  }
-  
-  #id_titolo_gs {
-    display: flex;
-  }
-  
-  /*INIZIO PARTE NEWS 1 e 2*/
-  
-  .blocco_news{
-    display: flex;
-    justify-content: center
-  }
+}
+
+.h1_news{
+  display: flex;
+  font-size: xx-large
+}
+
+.sottotitolo_news1{
+  display: flex;
+}
+
+.h3_news1 {
+  color: #484848;
+  font-weight: bold;
+  font-size: 16px;
 
   
-  .sezioni_news {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 10px;
-  }
-  
-  .sezione1_news{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
 
-  }
+.h3_news2 {
+  color: #484848;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
 
-  .sezione2_news{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .titolo_news {
-    color: #484848;
-    font-weight: bold;
-    margin:30px auto;
-    font-size: xx-large;
-    
-    
-  }
-  
-  .sottotitolo_news1{
-    display: flex;
-    flex-direction: column;
-    
-  }
+.h3_news1:hover {
+  color: #e60012;
+}
 
-  .h1_news{
-    display: flex;
-    font-size: xx-large
-  }
+.h3_news2:hover {
+  color: #e60012;
+}
 
-  .sottotitolo_news1{
-    display: flex;
-  }
+.descrizione_news1{
+  display: flex;
+}
 
-  .h3_news1 {
-    color: #484848;
-    font-weight: bold;
-    font-size: 16px;
-  
-    
-  }
+.immagine_girl{
+  display: flex;
+  justify-content: center;
+}
 
-  .h3_news2 {
-    color: #484848;
-    font-weight: bold;
-    font-size: 16px;
-    
-  }
+.girl_news {
+  width: 550.400px;
+  border-radius: 1%;
+}  
   
-  .h3_news1:hover {
-    color: #e60012;
-  }
-  
-  .h3_news2:hover {
-    color: #e60012;
-  }
-  
-  .descrizione_news1{
-    display: flex;
+.girl_news:hover {
+  width: 570px;
+  border-radius: 1%;
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}
+
+.immagine_apex{
+  display: flex;
+  justify-content: center;
+}
+
+.apex_news {
+  width: 550.400px;
+  border-radius: 1%;
+}
+
+.apex_news:hover {
+  width: 570px;
+  border-radius: 1%;
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}
+
+.scritte_news1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 560px;
   }
 
-  .immagine_girl{
-    display: flex;
-    justify-content: center;
-  }
+.data_news1{
+  display: flex;
   
-  .girl_news {
-    width: 550.400px;
-    border-radius: 1%;
-  }
-  
-  .girl_news:hover {
-    width: 570px;
-    border-radius: 1%;
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  .immagine_apex{
-    display: flex;
-    justify-content: center;
-  }
+}
 
-  .apex_news {
-    width: 550.400px;
-    border-radius: 1%;
-  }
-  
-  .apex_news:hover {
-    width: 570px;
-    border-radius: 1%;
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  .scritte_news1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    max-width: 560px;
-    }
+.data_news {
+  color: #484848;
 
-  .data_news1{
-    display: flex;
-    
-  }
+}
 
-  .data_news {
-    color: #484848;
-  
-  }
-  
-  .h3_news1 {
-    color: #484848;
-    font-weight: bold;
-  
-  
-  }
-  
-  
-  .read_news1 {
-    color: #e60012;
-    font-weight: bold;
-    text-decoration: underline;
-    
-  }
-  
-  .read_news1:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+.h3_news1 {
+  color: #484848;
+  font-weight: bold;
 
-  .link_news1{
-    margin: 30px 0px 0px 0px;
-  }
-  
-  
-  
-  .read_news2 {
-    color: #e60012;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .read_news2:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .link_news2{
-    margin: 50px 0px 0px 0px;
-  }
-  .read_news3 {
-    color: #e60012;
-    font-weight: bold;
-    
-    text-decoration: underline;
-  }
-  
-  .read_news3:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
 
-  .link_news3{
-    margin: 30px auto;
-  }
-  
-  .read_news4 {
-    color: #e60012;
-    font-weight: bold;
-    padding-top: 6%;
-    text-decoration: underline;
-  }
-  
-  .read_news4:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .read_news5 {
-    color: #e60012;
-    font-weight: bold;
-    padding-top: 6%;
-    text-decoration: underline;
-  }
-  
-  .read_news5:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .read_news6 {
-    color: #e60012;
-    font-weight: bold;
-    padding-top: 6%;
-    text-decoration: underline;
-  }
-  
-  .read_news6:hover {
-    color: #ac000d;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  
-  .sezioni_mini_news {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 40px;
-    margin: 100px 0px 0px 0px;
-  }
+}
 
-  
 
-  .sezione3_news{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.read_news1 {
+  color: #e60012;
+  font-weight: bold;
+  text-decoration: underline;
+  
+}
 
-  }
+.read_news1:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  .scritte_news2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    max-width: 240px;
-  }
-  .pokemon_news {
-    border-radius: 2%;
-    width: 250px;
-  }
-  
-  .pokemon_news:hover {
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  .pokemon_unite_news {
-    border-radius: 2%;
-    width: 250px;
-  }
-  
-  .pokemon_unite_news:hover {
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  .baseball_news {
-    border-radius: 2%;
-    width: 250px;
-  }
-  
-  .baseball_news:hover {
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  .volleyball_news {
-    border-radius: 2%;
-    width: 250px;
-  }
-  
-  .volleyball_news:hover {
-    filter: brightness(0%);
-    -webkit-filter: brightness(70%);
-    transition: 0.3s ease;
-  }
-  
-  /* color bianco non viene applicato*/
-  .button_news {
-    background-color: #e60012;
-    color: #fffff7 !important;
-    border-color: #e60012;
-    width: 250px;
-    height: 46px;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  /* color bianco non viene applicato*/
-  .button_news:hover {
-    background-color: #ac000d;
-    color: #fffff7 !important;
-    border-color: #ac000d;
-    width: 255px;
-    height: 51px;
-    font-weight: bold;
-    font-size: 15px;
-    transition: 0.5s;
-  }
+.link_news1{
+  margin: 30px 0px 0px 0px;
+}
   
   
-  .button_newsfinale{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 190px;
-  }
+.read_news2 {
+  color: #e60012;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.read_news2:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link_news2{
+  margin: 50px 0px 0px 0px;
+}
+.read_news3 {
+  color: #e60012;
+  font-weight: bold;
   
- 
+  text-decoration: underline;
+}
+
+.read_news3:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.link_news3{
+  margin: 30px auto;
+}
+
+.read_news4 {
+  color: #e60012;
+  font-weight: bold;
+  padding-top: 6%;
+  text-decoration: underline;
+}
+
+.read_news4:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.read_news5 {
+  color: #e60012;
+  font-weight: bold;
+  padding-top: 6%;
+  text-decoration: underline;
+}
+
+.read_news5:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.read_news6 {
+  color: #e60012;
+  font-weight: bold;
+  padding-top: 6%;
+  text-decoration: underline;
+}
+
+.read_news6:hover {
+  color: #ac000d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.sezioni_mini_news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px;
+  margin: 100px 0px 0px 0px;
+}
+
+
+
+.sezione3_news{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.scritte_news2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 240px;
+}
+.pokemon_news {
+  border-radius: 2%;
+  width: 250px;
+}
+
+.pokemon_news:hover {
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}
+
+.pokemon_unite_news {
+  border-radius: 2%;
+  width: 250px;
+}
+
+.pokemon_unite_news:hover {
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}
+
+.baseball_news {
+  border-radius: 2%;
+  width: 250px;
+}
+
+.baseball_news:hover {
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}
+
+.volleyball_news {
+  border-radius: 2%;
+  width: 250px;
+}
+
+.volleyball_news:hover {
+  filter: brightness(0%);
+  -webkit-filter: brightness(70%);
+  transition: 0.3s ease;
+}  
+  
+  
+ /* color bianco non viene applicato*/
+ .button_news {
+  background-color: #e60012;
+  color: #fffff7 !important;
+  border-color: #e60012;
+  width: 250px;
+  height: 46px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* color bianco non viene applicato*/
+.button_news:hover {
+  background-color: #ac000d;
+  color: #fffff7 !important;
+  border-color: #ac000d;
+  width: 255px;
+  height: 51px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+
+.button_newsfinale{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 190px;
+}
+.button_news span{
+  color: #fffff7;
+} 
+  
 @media (max-width: 320px) {
 
   .blocco_giorgia {
@@ -686,7 +685,7 @@
 
   .link_news1{
     margin: 10px 0px 0px 0px;
-  }
+}
 
   .link_news2{
     margin: 10px 0px 0px 0px;
@@ -695,6 +694,305 @@
   .link_news3{
     margin: 30px auto;
     padding-top: 10px;
+  }
+    
+  .read_news4 {
+    color: #e60012;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+    
+    
+  .read_news5 {
+    color: #e60012;
+    font-weight: bold;
+    padding-top: 3%;
+    text-decoration: underline;
+  }
+    
+  .read_news6 {
+    color: #e60012;
+    font-weight: bold;
+    padding-top: 3%;
+    text-decoration: underline;
+  }
+    
+  .button_news span{
+    color: #fffff7;
+  }
+}
+
+
+@media (width:768px) {
+  .blocco_giorgia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px auto;
+    /* dimensione massima mantiene la responsività e regola l'immagine*/
+    max-width: 71.5rem;
+    
+  }
+
+  .gruppo_titolo_gs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .titoli_giorgia {
+    font-size: xx-large;
+  
+  }
+
+  .sottotitolo_gaming_system {
+    color: #484848;
+    font-weight: bold;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: xx-large;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .gruppo_sottotitolo_gs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  
+  /* color bianco non viene applicato*/
+  .button_gs {
+    background-color: #e60012;
+    color: #fffff7;
+    border-color: #e60012;
+    width: 660px;
+    height: 46px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .button_gs h3 {
+      color: #fffff7;
+  }
+  
+  /* color bianco non viene applicato*/
+  .button_gs:hover {
+    background-color: #ac000d;
+    color: #fffff7 !important;
+    border-color: #ac000d;
+    width: 680px;
+    height: 51px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  .sezioni_news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    gap: 10px;
+  }
+  .sezione1_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .sezione2_news{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titolo_news {
+    color: #484848;
+    font-weight: bold;
+    margin:30px 16px;
+    font-size: large;
+    
+    
+  }
+  
+  .sottotitolo_news1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .h1_news{
+    display: flex;
+    font-size: large
+  }
+
+
+  
+  .girl_news {
+    width: 352.638px;
+    height: 198.350px;
+    border-radius: 1%;
+  }
+  
+  .girl_news:hover {
+    width: 352.638px;
+    height: 198.350px;
+    border-radius: 1%;
+    filter: brightness(0%);
+    -webkit-filter: brightness(70%);
+    transition: 0.3s ease;
+  }
+  
+
+  .apex_news {
+    width: 352.638px;
+    height: 198.350px;
+    border-radius: 1%;
+  }
+  
+  .apex_news:hover {
+    width: 352.638px;
+    height: 198.350px;
+    border-radius: 1%;
+    filter: brightness(0%);
+    -webkit-filter: brightness(70%);
+    transition: 0.3s ease;
+  }
+  
+  .scritte_news1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 350px;
+    }
+
+  .sottotitolo_news2{
+    margin: 20px 0px 0px 0px;
+  }
+  .data_news1{
+    display: flex;
+    
+  }
+
+  .sezioni_mini_news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    margin: 100px 0px 0px 0px;
+  }
+
+  .pokemon_news {
+    border-radius: 2%;
+    width: 160.312px;
+  }
+  
+  .scritte_news2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 159px;
+    margin-top: 30px;
+  }
+
+  .descrizione_news3{
+    font-size: small;
+  }
+  
+  .sezione3_news{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 135px;
+
+  }
+
+  .pokemon_unite_news {
+    border-radius: 2%;
+    width: 160.312px;
+  }
+  .descrizione_news4{
+    font-size: small;
+  }
+  
+  .sezione4_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+    padding-bottom: 50px;
+
+  }
+
+  .baseball_news {
+    border-radius: 2%;
+    width: 160.312px;
+  }
+  
+  .descrizione_news5{
+    font-size: small;
+  }
+  
+  .sezione5_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+    margin-bottom: 55px;
+  }
+
+  
+  .volleyball_news{
+    border-radius: 2%;
+    width: 160.312px;
+  }
+
+  .descrizione_news6{
+    font-size: small;
+  }
+  
+  .sezione6_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+    margin-bottom: 55px;
+  }
+
+  .button_newsfinale{
+    display: flex;
+    justify-content: center;
+    margin: 50px 16px;
+  }
+
+  .link_news1{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .link_news2{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .link_news3{
+    margin: 30px auto;
+    padding-top: 3px;
   }
   
   .read_news4 {
@@ -717,6 +1015,41 @@
     padding-top: 3%;
     text-decoration: underline;
   }
-  
 
+  .button_news {
+    background-color: #e60012;
+    color: #fffff7 !important;
+    border-color: #e60012;
+    width: 660px;
+    height: 46px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* color bianco non viene applicato*/
+  .button_news:hover {
+    background-color: #ac000d;
+    color: #fffff7 !important;
+    border-color: #ac000d;
+    width: 668px;
+    height: 51px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  .button_news span{
+    color: #fffff7;
+  }
+  
+  .button_newsfinale{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+  }
 }
