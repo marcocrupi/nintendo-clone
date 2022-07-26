@@ -426,7 +426,7 @@
   .button_newsfinale{
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto 
+    margin: 50px 190px;
   }
   
  
@@ -511,8 +511,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 16px;
+    margin-right: 16px;
     gap: 10px;
   }
   .sezione1_news{
@@ -530,7 +530,7 @@
   .titolo_news {
     color: #484848;
     font-weight: bold;
-    margin:30px auto;
+    margin:30px 16px;
     font-size: large;
     
     
@@ -593,5 +593,130 @@
     
   }
 
+  .sezioni_mini_news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    margin: 100px 0px 0px 0px;
+  }
+
+  .pokemon_news {
+    border-radius: 2%;
+    width: 132px;
+  }
   
+  .scritte_news2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 120px;
+  }
+
+  .descrizione_news3{
+    font-size: small;
+  }
+  
+  .sezione3_news{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 135px;
+
+  }
+
+  .pokemon_unite_news {
+    border-radius: 2%;
+    width: 132px;
+  }
+  .descrizione_news4{
+    font-size: small;
+  }
+  
+  .sezione4_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+    padding-bottom: 50px;
+
+  }
+
+  .baseball_news {
+    border-radius: 2%;
+    width: 132px;
+  }
+  
+  .descrizione_news5{
+    font-size: small;
+  }
+  
+  .sezione5_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+  }
+
+  
+  .volleyball_news{
+    border-radius: 2%;
+    width: 132px;
+  }
+
+  .descrizione_news6{
+    font-size: small;
+  }
+  
+  .sezione6_news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 135px;
+  }
+
+  .button_newsfinale{
+    display: flex;
+    justify-content: center;
+    margin: 50px 16px;
+  }
+
+  .link_news1{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .link_news2{
+    margin: 10px 0px 0px 0px;
+  }
+
+  .link_news3{
+    margin: 30px auto;
+    padding-top: 10px;
+  }
+  
+  .read_news4 {
+    color: #e60012;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  
+  .read_news5 {
+    color: #e60012;
+    font-weight: bold;
+    padding-top: 3%;
+    text-decoration: underline;
+  }
+  
+  .read_news6 {
+    color: #e60012;
+    font-weight: bold;
+    padding-top: 3%;
+    text-decoration: underline;
+  }
+  
+
 }
