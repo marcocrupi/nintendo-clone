@@ -431,5 +431,80 @@
   
  
 @media (max-width: 320px) {
+
+  .blocco_giorgia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px auto;
+    /* dimensione massima mantiene la responsività e regola l'immagine*/
+    max-width: 71.5rem;
+    
+  }
+
+  .gruppo_titolo_gs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .titoli_giorgia {
+    font-size: large;
+  
+  }
+
+  .sottotitolo_gaming_system {
+    color: #484848;
+    font-weight: bold;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: large;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .gruppo_sottotitolo_gs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  
+  /* color bianco non viene applicato*/
+  .button_gs {
+    background-color: #e60012;
+    color: #fffff7;
+    border-color: #e60012;
+    width: 260px;
+    height: 46px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .button_gs h3 {
+      color: #fffff7;
+  }
+  
+  /* color bianco non viene applicato*/
+  .button_gs:hover {
+    background-color: #ac000d;
+    color: #fffff7 !important;
+    border-color: #ac000d;
+    width: 145px;
+    height: 51px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s;
+  }
   
 }
