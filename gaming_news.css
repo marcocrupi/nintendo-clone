@@ -459,16 +459,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* dimensione massima mantiene la responsività e regola l'immagine*/
-    max-width: 71.5rem;
-    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
   }
 
   .gruppo_titolo_gs{
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+    
   }
   .titoli_giorgia {
     font-size: large;
@@ -490,8 +489,7 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+    
   }
   
   
@@ -529,14 +527,17 @@
     transition: 0.5s;
   }
   
-  .sezioni_news {
+  
+  .crupi_russo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 16px;
-    margin-right: 16px;
-    gap: 10px;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap:0px
   }
+  
   .sezione1_news{
     display: flex;
     flex-direction: column;
@@ -552,7 +553,6 @@
   .titolo_news {
     color: #484848;
     font-weight: bold;
-    margin:30px 16px;
     font-size: large;
     
     
@@ -562,11 +562,6 @@
     display: flex;
     flex-direction: column;
     
-  }
-
-  .sezioni_news {
-    display: grid;
-    grid-template-columns: 2;
   }
 
 
@@ -644,7 +639,7 @@
   
   .sezione3_news{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     max-width: 135px;
 
@@ -747,15 +742,14 @@
 
 
 @media (width:768px) {
-  .blocco_giorgia {
+  /*.blocco_giorgia {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 32px auto;
-    /* dimensione massima mantiene la responsività e regola l'immagine*/
     max-width: 71.5rem;
     
-  }
+  } */
 
   .gruppo_titolo_gs{
     display: flex;
