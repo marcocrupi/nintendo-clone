@@ -6,6 +6,10 @@
   font-size: xx-large;
 }
   
+.titoli_h1{
+  font-size: xx-large;
+}
+
 .switch {
   width: 100%;
 }
@@ -28,7 +32,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   font-size: xx-large;
-  margin: 0px 0px 30px 0px;
 }
 
 .sottotitolo_gaming_system h2 {
@@ -90,6 +93,7 @@
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 #id_titolo_gs {
@@ -99,14 +103,15 @@
 }
 
 
+
 .blocco_giorgia2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  
 }
+
 
 
 #id_titolo_news {
@@ -115,8 +120,15 @@
   align-items: center;
 }
   
+.titolo_news_crupi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-
+.spazio_news{
+  width:50px;
+}
 .sottotitolo_news1{
   display: flex;
   flex-direction: column;
@@ -127,12 +139,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: space-around;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.spazio_news{
-  width: 15px;
+
+.space_news{
+  width: 10px;
 }
 
 .h1_news{
@@ -327,17 +339,16 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 40px;
-  margin: 100px 0px 0px 0px;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 
 
 .sezione3_news{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 
 }
@@ -408,7 +419,7 @@
   -moz-border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 /* color bianco non viene applicato*/
 .button_news:hover {
@@ -425,9 +436,16 @@
 
 .button_newsfinale{
   display: flex;
-  flex-wrap: wrap;
-  margin: 50px 190px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  
 }
+  
 .button_news span{
   color: #fffff7;
 } 
@@ -438,7 +456,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 32px auto;
+    align-items: center;
     /* dimensione massima mantiene la responsività e regola l'immagine*/
     max-width: 71.5rem;
     
