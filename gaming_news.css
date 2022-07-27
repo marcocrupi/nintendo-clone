@@ -4,17 +4,19 @@
 
 h1 {
   font-size: xx-large;
-  padding-top: 5%;
 }
 
 .switch {
-  width: 1050px;
+  width: 100%;
 }
 
 .titolo_gaming_system {
   color: #484848;
   font-weight: bold;
-  padding-top: 2%;
+}
+
+.immagine_switch {
+  margin: 2rem 0;
 }
 
 .sottotitolo_gaming_system {
@@ -25,13 +27,19 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 5%;
   font-size: xx-large;
 }
 
-.button_gaming_system {
-  padding-left: 3%;
-  padding-top: 5%;
+.sottotitolo_gaming_system h2 {
+  font-size: 1.4rem;
+}
+
+#id_bottone_gaming_system {
+  margin-left: 2rem;
+}
+
+#id_bottone_gaming_system h3 {
+  font-size: 20px;
 }
 
 /* color bianco non viene applicato*/
@@ -39,8 +47,8 @@ h1 {
   background-color: #e60012;
   color: #fffff7;
   border-color: #e60012;
-  width: 140px;
-  height: 46px;
+  width: 11rem;
+  height: 4rem;
   font-weight: bold;
   font-size: 15px;
   border-radius: 5px;
@@ -53,7 +61,7 @@ h1 {
 }
 
 .button_gs h3 {
-    color: #fffff7;
+  color: #fffff7;
 }
 
 /* color bianco non viene applicato*/
@@ -70,17 +78,22 @@ h1 {
 
 .gruppo_sottotitolo_gs {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .blocco_giorgia {
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #id_titolo_gs {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .titolo_news {
@@ -458,7 +471,6 @@ h1 {
   .sezioni_news {
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows: ;
   }
 
   .sezione1_news {
@@ -798,7 +810,6 @@ h1 {
   .sezioni_news {
     display: grid;
     grid-template-columns: 2;
-    grid-template-rows: ;
   }
 
   .sezione1_news {
@@ -865,6 +876,3 @@ h1 {
     grid-row: 2;
   }
 }
-
-
-
