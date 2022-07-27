@@ -462,6 +462,20 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     width: 100%;
+    
+  }
+
+  #id_titolo_gs{
+    margin: 0px 10px;
+  }
+
+  #id_sottotitolo_gs{
+    margin: 0px 10px;
+    
+  }
+
+  .sottotitolo_gaming_system h2{
+    font-size: 18px;
   }
 
   .gruppo_titolo_gs{
@@ -469,8 +483,8 @@
     flex-direction: column;
     
   }
-  .titoli_giorgia {
-    font-size: large;
+  .titolo_gaming_system h1 {
+    font-size: 20px;
   
   }
 
@@ -481,7 +495,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: large;
+    font-size: medium;
     margin: 0px 0px 30px 0px;
   }
 
@@ -492,6 +506,9 @@
     
   }
   
+  #id_bottone_gaming_system {
+    margin: 0px 20px;
+  }
   
   /* color bianco non viene applicato*/
   .button_gs {
@@ -509,7 +526,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    
   }
+  
   
   .button_gs h3 {
       color: #fffff7;
@@ -550,10 +569,10 @@
     flex-direction: column;
   }
   
-  .titolo_news {
+  .titolo_news h1 {
     color: #484848;
     font-weight: bold;
-    font-size: large;
+    font-size: 20px;
     
     
   }
@@ -610,13 +629,15 @@
     
   }
 
+  
+
   .sezioni_mini_news {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    gap: 40px;
+    gap: 10px;
     margin: 100px 0px 0px 0px;
   }
 
@@ -639,9 +660,10 @@
   
   .sezione3_news{
     display: flex;
-    flex-direction: column;
+    flex-direction:  column;
     justify-content: center;
     max-width: 135px;
+    margin: 0px 0px 50px 0px;
 
   }
 
@@ -698,7 +720,8 @@
   .button_newsfinale{
     display: flex;
     justify-content: center;
-    margin: 50px 16px;
+    margin: 50px 0px;
+    padding: 0px 24px;
   }
 
   .link_news1{
@@ -737,7 +760,37 @@
     
   .button_news span{
     color: #fffff7;
+
   }
+
+  .button_news {
+    background-color: #e60012;
+    color: #fffff7 !important;
+    border-color: #e60012;
+    width: 272px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  /* color bianco non viene applicato*/
+  .button_news:hover {
+    background-color: #ac000d;
+    color: #fffff7 !important;
+    border-color: #ac000d;
+    width: 278px;
+    height: 51px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
 }
 
 
