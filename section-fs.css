@@ -110,9 +110,10 @@
 .section-fs-digital ul {
   display: flex;
   flex-direction: row;
-  padding: 0.5rem;
-  padding-bottom: 1rem;
   padding-top: 1.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
@@ -130,7 +131,7 @@
   flex-direction: column;
   box-shadow: inset 0 0 0 1px lightgray;
   border-radius: 0.25rem;
-  min-height: 320px;
+  min-height: 330px;
   cursor: pointer;
 }
 
@@ -237,7 +238,7 @@
 
 /* ----------------------------------------------------------- Responsive */
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 720px) {
   .section-fs-characters ul li {
     flex-basis: 25%;
   }
@@ -264,10 +265,59 @@
   }
 
   .section-fs-digital ul li {
+    flex-basis: 38%;
+  }
+
+  .section-fs-digital .section-fs-card {
+    min-height: 335px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .section-fs-digital ul li {
     flex-basis: 28%;
+  }
+
+  .section-fs-digital ul {
+    margin: 0 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-fs-digital ul li:first-child {
+    padding-left: 0;
+  }
+  
+  .section-fs-digital ul li:last-child {
+    padding-right: 0;
   }
 
   .section-fs-digital .section-fs-card {
     min-height: 360px;
+  }
+
+  /* Scrollbar height */
+  .section-fs-digital ul::-webkit-scrollbar {
+    height: 5px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Track */
+  .section-fs-digital ul::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 2px;
+  }
+  
+  /* Scrollbar Handle */
+  .section-fs-digital ul::-webkit-scrollbar-thumb {
+    background: rgba(230, 0, 18, 0.75); 
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Handle on hover */
+  .section-fs-digital ul::-webkit-scrollbar-thumb:hover {
+    background: rgb(230, 0, 18);
   }
 }
