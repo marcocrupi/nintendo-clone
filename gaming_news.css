@@ -126,9 +126,9 @@
   justify-content: center;
 }
 
-.spazio_news{
+/*.spazio_news{
   width:50px;
-}
+}*/
 .sottotitolo_news1{
   display: flex;
   flex-direction: column;
@@ -141,11 +141,12 @@
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  gap:50px
 }
 
-.space_news{
+/*.space_news{
   width: 10px;
-}
+}*/
 
 .h1_news{
   display: flex;
@@ -342,6 +343,7 @@
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  gap:30px
 }
 
 
