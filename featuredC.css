@@ -1,0 +1,203 @@
+.featuredTitle {
+    margin-top: 2rem;
+}
+
+.featuredSection {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* max-width: 1144px; */
+    margin: 0 auto;
+    padding: 2rem 0;
+    box-sizing: border-box;
+  }
+  
+  .featuredSection h2 {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+  
+  .featuredSection h2::first-letter {
+    text-transform: capitalize;
+  }
+  
+  
+  
+  /* ----------------------------------------------------------- Digital */
+  
+  .featuredDigital ul {
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 1.5rem; */
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .featuredDigital ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-right: -8rem;
+    flex-basis: 66.66%;
+    flex-shrink: 0;
+  }
+  
+  .featuredCard {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-shadow: inset 0 0 0 1px lightgray;
+    border-radius: 0.25rem;
+    min-height: 150px;
+    cursor: pointer;
+  }
+  
+  .section-fs-card-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 0;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 0.25rem 0.25rem 0 0;
+    transform: translateY(0);
+  }
+  
+  .featuredCard:hover .section-fs-card-img {
+    transform: translateY(-1rem);
+  }
+  
+  .featured-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding-bottom: 1rem ;
+    justify-content: space-between;
+  }
+  
+  .featuredCard header {
+    padding: 1rem;
+    position: relative;
+  }
+
+  .featuredCard footer {
+    padding: 0 1rem;
+  }
+  
+  .featuredCard header h5 {
+    font-size: 1.2rem;
+  }
+  
+  /* .featuredCard footer h5 {
+    padding-bottom: 1rem;
+  } */
+  
+  .featuredCard footer h6 {
+    font-size: 0.875rem;
+    color: rgba(0,0,0,0.5);
+    border-left: 2px solid red;
+    font-weight: normal;
+    padding-left: 0.5rem;
+  }
+  
+  
+  /* ----------------------------------------------------------- Responsive */
+  
+  @media only screen and (min-width: 720px) {
+   
+    .featuredSection h2 {
+      font-size: 1.75rem;
+    }
+    
+  
+    .featuredDigital header {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .featuredDigital header a {
+      padding: 0 1rem;
+      cursor: pointer;
+    }
+  
+    .featuredDigital header h2 {
+      border-right: 1px solid lightgrey;
+    }
+  
+    .featuredDigital ul li {
+      flex-basis: 38%;
+      padding: 0 2rem;
+    }
+  
+    .featuredDigital .featuredCard {
+      min-height: 335px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  
+    .featuredDigital ul li {
+      flex-basis: 28%;
+      padding: 0 1rem;
+    }
+  
+    .featuredDigital ul {
+      margin: 0 1rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .featuredDigital ul li:first-child {
+      padding-left: 0;
+    }
+    
+    .featuredDigital ul li:last-child {
+      padding-right: 0;
+    }
+  
+    .featuredDigital .featuredCard {
+      min-height: 360px;
+    }
+  
+    /* Scrollbar height */
+    .featuredDigital ul::-webkit-scrollbar {
+      height: 5px;
+      cursor: pointer;
+    }
+  
+    /* Scrollbar Track */
+    .featuredDigital ul::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+      border-radius: 2px;
+    }
+    
+    /* Scrollbar Handle */
+    .featuredDigital ul::-webkit-scrollbar-thumb {
+      background: rgba(230, 0, 18, 0.75); 
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  
+    /* Scrollbar Handle on hover */
+    .featuredDigital ul::-webkit-scrollbar-thumb:hover {
+      background: rgb(230, 0, 18);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .featuredDigital ul li {
+        padding: 0 1rem;
+      }
+
+      .featuredCard {
+        height: 300px;
+      }
+  }
