@@ -39,6 +39,10 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 500px) {
+
+}
+
 .ingtSy img {
   width: 100%;
 }
@@ -216,7 +220,7 @@
   padding: 0.25em 0px 0px;
 }
 
-@media (min-width: 429px) {
+@media (min-width: 360px) {
   .brXfoX {
     font-size: 1.75rem;
   }

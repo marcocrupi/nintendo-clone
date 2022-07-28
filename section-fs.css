@@ -321,3 +321,7 @@
     background: rgb(230, 0, 18);
   }
 }
+
+.section-fs-digital header {
+  padding-bottom: 20px;
+}
