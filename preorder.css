@@ -1,0 +1,244 @@
+.bHideo {
+  position: relative;
+}
+
+.dQEQbQ {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+  width: 100%;
+  background-image: url(https://assets.nintendo.com/image/upload/q_60/f_auto/dpr_auto/ncom/en_US/merchandising/center-stage-banner/xenoblade-chronicles-3/xbc3-constellation-tile);
+  background-position: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: unset;
+  background-repeat: repeat;
+  z-index: -1;
+  height: calc(((100% - 2rem) - 5rem) - 1.5rem);
+}
+
+.jjOUfy {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lozQYK {
+  width: 100%;
+  position: relative;
+}
+
+.ingtSy {
+  display: block;
+  line-height: 0;
+  min-height: 1px;
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+.ingtSy img {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .dQEQbQ {
+    height: calc(100% - 13.5rem);
+  }
+}
+
+.dXcYXq {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.buttonPreOrder {
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    transform: scale(0.9);
+}
+
+.button_gs.buttonPreOrder:hover {
+    transform: scale(1);
+  }
+
+.buttonPreOrder h3 {
+    font-size: 1.2rem;
+}
+
+.iAeEqz {
+  color: rgb(72, 72, 72);
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .jjOUfy {
+    padding-top: 2rem;
+  }
+  .dQEQbQ {
+    position: absolute;
+    height: calc(100% - 11.4rem);
+  }
+  .ingtSy {
+    width: 96%;
+  }
+
+  .lkCklk {
+    border-radius: 0.25rem;
+  }
+
+  .dXcYXq {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 2rem;
+    justify-items: start;
+  }
+
+  .iAeEqz {
+    color: rgb(72, 72, 72);
+    text-align: start;
+  }
+
+  .gcmHXU > :nth-child(3) {
+    justify-self: end;
+  }
+}
+
+.iRQhRu {
+  max-width: 90rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.gXqwhs {
+  position: relative;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dQEQbQ {
+    height: calc(((100% - 2rem) - 5rem) - 3rem);
+  }
+
+  .iRQhRu {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gXqwhs {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.brXfoX {
+  margin-bottom: 0px;
+  line-height: 1.35;
+  font-size: 1.3125rem;
+}
+
+.lbTwQR {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.eCJzWt {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.hChwlT {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  min-height: 5.25rem;
+  gap: 0.75rem;
+}
+
+.hChwlT svg {
+  min-height: 68px;
+  height: 100%;
+  width: auto;
+  min-width: 44px;
+  display: block;
+}
+
+.xPxnn {
+  display: flex;
+  flex: 1 1 0%;
+  min-width: 120px;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  padding: 0px;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: fit-content;
+  color: rgb(72, 72, 72);
+  max-width: 276rem;
+}
+
+.xPxnn {
+  display: flex;
+  flex: 1 1 0%;
+  min-width: 120px;
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  padding: 0px;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: fit-content;
+  color: rgb(72, 72, 72);
+  max-width: 276rem;
+}
+
+.dXLrrd:first-child {
+  padding: 0px 0px 0.25em;
+}
+
+.dXLrrd:not(:last-child) {
+  border-bottom: 1px solid rgb(72, 72, 72);
+  padding: 0.25em 0px;
+}
+
+.dXLrrd:last-child {
+  padding: 0.25em 0px 0px;
+}
+
+@media (min-width: 360px) {
+  .brXfoX {
+    font-size: 1.75rem;
+  }
+
+  .lbTwQR {
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+  }
+
+  .gcmHXU > :nth-child(3) {
+    justify-self: center;
+    display: block;
+  }
+
+  .xPxnn {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
