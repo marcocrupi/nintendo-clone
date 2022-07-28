@@ -1,0 +1,323 @@
+.section-fs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+.section-fs h2 {
+  font-size: 1.25rem;
+  padding: 0 1rem;
+}
+
+.section-fs h2::first-letter {
+  text-transform: capitalize;
+}
+
+/* ----------------------------------------------------------- Characters */
+.section-fs-characters ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.section-fs-characters ul li {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.section-fs-characters .img-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: rgba(0,0,0,0.1);
+  overflow: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: all 0.5s ease-out;
+}
+
+.section-fs-characters .img-container:hover {
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.33);
+}
+
+.section-fs-characters .img-back, 
+.section-fs-characters .img-front {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transition: all 0.25s ease-in-out;
+}
+
+.section-fs-characters .img-back {
+  z-index: 1;
+  transform: translate3d(-50%, -50%, 0) scale(1.15);
+}
+
+.section-fs-characters .img-container:hover .img-back {
+  transform: translate3d(-50%, -50%, 0) scale(1);
+}
+
+.section-fs-characters .img-front {
+  z-index: 2;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+}
+
+.section-fs-characters .img-container:hover .img-front {
+  transform: translate3d(-50%, -50%, 0) scale(1.1);
+}
+
+.section-fs-characters h3 {
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  padding-top: 0.5rem;
+}
+
+.section-fs-characters h3 sup {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* ----------------------------------------------------------- Digital */
+.section-fs-digital header {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-fs-digital header a {
+  color: rgb(230, 0, 18);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 0.5rem 1rem;
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.section-fs-digital ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.section-fs-digital ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  flex-basis: 66.66%;
+  flex-shrink: 0;
+}
+
+.section-fs-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 0 1px lightgray;
+  border-radius: 0.25rem;
+  min-height: 330px;
+  cursor: pointer;
+}
+
+.section-fs-card-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 0.25rem 0.25rem 0 0;
+  transform: translateY(0);
+}
+
+.section-fs-card:hover .section-fs-card-img {
+  transform: translateY(-1rem);
+}
+
+.section-fs-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.section-fs-card header,
+.section-fs-card footer {
+  padding: 1rem;
+  position: relative;
+}
+
+.section-fs-card header h5 {
+  font-size: 1rem;
+}
+
+.section-fs-card footer h5 {
+  padding-bottom: 1rem;
+}
+
+.section-fs-card footer h6 {
+  font-size: 0.875rem;
+  color: rgba(0,0,0,0.5);
+  border-left: 2px solid red;
+  font-weight: normal;
+  padding-left: 0.5rem;
+}
+
+.section-fs-card footer button {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 1;
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  background: transparent;
+  box-shadow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-fs-card footer button:hover .section-fs-card-sparks {
+  opacity: 1;
+}
+
+.section-fs-card-heart {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: red;
+  margin-top: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-fs-card-circle {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.section-fs-card footer button:hover .section-fs-card-circle {
+  transform: scale(1);
+}
+
+.section-fs-card-sparks {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+/* ----------------------------------------------------------- Responsive */
+
+@media only screen and (min-width: 720px) {
+  .section-fs-characters ul li {
+    flex-basis: 25%;
+  }
+  .section-fs h2 {
+    font-size: 1.75rem;
+  }
+  .section-fs-characters h3 {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .section-fs-digital header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .section-fs-digital header a {
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  .section-fs-digital header h2 {
+    border-right: 1px solid lightgrey;
+  }
+
+  .section-fs-digital ul li {
+    flex-basis: 38%;
+  }
+
+  .section-fs-digital .section-fs-card {
+    min-height: 335px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .section-fs-digital ul li {
+    flex-basis: 28%;
+  }
+
+  .section-fs-digital ul {
+    margin: 0 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-fs-digital ul li:first-child {
+    padding-left: 0;
+  }
+  
+  .section-fs-digital ul li:last-child {
+    padding-right: 0;
+  }
+
+  .section-fs-digital .section-fs-card {
+    min-height: 360px;
+  }
+
+  /* Scrollbar height */
+  .section-fs-digital ul::-webkit-scrollbar {
+    height: 5px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Track */
+  .section-fs-digital ul::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 2px;
+  }
+  
+  /* Scrollbar Handle */
+  .section-fs-digital ul::-webkit-scrollbar-thumb {
+    background: rgba(230, 0, 18, 0.75); 
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  /* Scrollbar Handle on hover */
+  .section-fs-digital ul::-webkit-scrollbar-thumb:hover {
+    background: rgb(230, 0, 18);
+  }
+}
