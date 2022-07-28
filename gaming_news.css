@@ -156,10 +156,6 @@ h1 {
   margin-right: 1rem;
 }
 
-.fASRBz {
-  grid-column: 1 / span 2;
-}
-
 .ebIPgA {
   height: 100%;
   display: flex;
@@ -214,10 +210,6 @@ h1 {
   animation-duration: 1000ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
-.fASRBB {
-  grid-column: 1 / span 2;
 }
 
 .ebIPgA {
@@ -312,19 +304,12 @@ h1 {
     margin-right: auto;
   }
 
-  .gridContainer {
+  /* .gridContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-  }
+    gap: 2rem; 
+  } */
 
-  .fASRBz {
-    grid-column: 1 / span 2;
-  }
-
-  .fASRBB {
-    grid-column: 3 / span 2;
-  }
 }
 
 .flexContainerC {
@@ -429,7 +414,7 @@ h1 {
 }
 
 .hsnfrp {
-  font-size: 0.875rem;
+  width: max-content;
   font-weight: 700;
   cursor: pointer;
   padding-bottom: 0px;
@@ -455,9 +440,28 @@ h1 {
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bigBlockImg {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.BigBlockImgSingle {
+  width: 50%;
+}
+
+.smallBlockImg {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.smallBlockImgSingle {
+  width: 30%;
 }
 
 .OUTTM {
@@ -546,4 +550,40 @@ h1 {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+@media screen and (max-width: 1270px) {
+  .smallBlockImg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .smallBlockImgSingle {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .smallBlockImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .smallBlockImgSingle {
+    width: 45%;
+  }
+
+  .bigBlockImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .BigBlockImgSingle {
+    width: 45%;
+  }
 }
