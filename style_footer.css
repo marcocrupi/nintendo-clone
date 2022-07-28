@@ -186,37 +186,43 @@ footer > section > div > a:visited {
   text-align: center;
 }
 
-.gridcontainer {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 2rem;
+.flexcontainerCrupi {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  max-width: 90rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gridcontainer > p {
-  max-width: unset;
+.flexcontainerCrupi .flexLeft p {
   text-align: left;
   font-size: 12px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.gridcontainer > p > span {
+.flexcontainerCrupi .flexLeft p span {
   display: inline;
   color: var(--secondColor);
   font-size: 12px;
 }
 
+.flexcontainerCrupi .flexRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .flexcontainer {
-  display: inline-flex;
+  display: flex;
   color: #fff;
   font-weight: 700;
 }
 
 .flexcontainergap {
-  display: inline-flex;
-  justify-content: center;
-  -webkit-box-pack: center;
   color: #fff;
   font-weight: 700;
   gap: 1rem;
@@ -450,68 +456,67 @@ footer > section > div > a:visited {
 
 /* LAPTOP MEDIA QUERY */
 
-
 @media screen and (max-width: 1025px) {
-    .gridCrupi {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr auto;
-        grid-template-areas:
-          "columnCrupiOneArea columnCrupiTwoArea columnCrupiThreeArea" 
-          "columnCrupiFourArea columnCrupiFiveArea columnCrupiSixArea"
-          ". . esrArea";
-        gap: 2rem;
-    
-        max-width: 90rem;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  .gridCrupi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas:
+      "columnCrupiOneArea columnCrupiTwoArea columnCrupiThreeArea"
+      "columnCrupiFourArea columnCrupiFiveArea columnCrupiSixArea"
+      ". . esrArea";
+    gap: 2rem;
+
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .gridCrupi {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr 1fr auto;
-        grid-template-areas:
-          "columnCrupiOneArea columnCrupiTwoArea"  
-          "columnCrupiThreeArea columnCrupiFourArea" 
-          "columnCrupiFiveArea columnCrupiSixArea"
-          ". esrArea";
-        gap: 2rem;
-    
-        max-width: 90rem;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  .gridCrupi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "columnCrupiOneArea columnCrupiTwoArea"
+      "columnCrupiThreeArea columnCrupiFourArea"
+      "columnCrupiFiveArea columnCrupiSixArea"
+      ". esrArea";
+    gap: 2rem;
+
+    max-width: 90rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .gridCrupi {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas:
-          "columnCrupiOneArea" 
-          "columnCrupiTwoArea"  
-          "columnCrupiThreeArea" 
-          "columnCrupiFourArea" 
-          "columnCrupiFiveArea" 
-          "columnCrupiSixArea"
-          "esrArea";
-        gap: 2rem;
-    
-        max-width: none;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  .gridCrupi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "columnCrupiOneArea"
+      "columnCrupiTwoArea"
+      "columnCrupiThreeArea"
+      "columnCrupiFourArea"
+      "columnCrupiFiveArea"
+      "columnCrupiSixArea"
+      "esrArea";
+    gap: 2rem;
 
-      .esrbgrid {
-        justify-content: center;
-      }
+    max-width: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .esrbgrid {
+    justify-content: center;
+  }
 }
 
 /* @media (min-width: 1025px) {
@@ -539,7 +544,6 @@ footer > section > div > a:visited {
     justify-content: start;
   }
 } */
-
 
 /* @media (min-width: 1440px) {
   .gridtemplate {
