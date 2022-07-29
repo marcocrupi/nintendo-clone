@@ -493,6 +493,11 @@ header {
 /* MEDIA QUERIES */
 
 @media (max-width: 1125px) {
+
+  header {
+    padding-bottom: 0px;
+  }
+
   .wrapper .top_nav .top_nav_left_logo svg {
     width: 5.8rem;
     height: 100%;
