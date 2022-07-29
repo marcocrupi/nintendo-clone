@@ -175,6 +175,12 @@
   display: block;
 }
 
+@media screen and (max-width: 1024px) {
+  .eCJzWt {
+    margin-top: 1rem;
+  }
+}
+
 .xPxnn {
   display: flex;
   flex: 1 1 0%;
