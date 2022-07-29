@@ -564,7 +564,13 @@ h1 {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
+
+  .centerButtonMobile {
+    display: flex;
+    justify-content: center;
+  }
+
   .smallBlockImg {
     display: flex;
     flex-wrap: wrap;
@@ -598,3 +604,4 @@ h1 {
     margin-bottom: 1rem;
   }
 }
+
