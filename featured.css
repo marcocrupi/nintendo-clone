@@ -44,6 +44,9 @@
   margin-right: -10rem;
   flex-basis: 66.66%;
   flex-shrink: 1;
+
+  min-width: 400px;
+  flex-grow: 1;
 }
 
 .featuredCard {
