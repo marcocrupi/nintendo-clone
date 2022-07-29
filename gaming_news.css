@@ -292,25 +292,21 @@ h1 {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  .sectionCrupi {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  .containerC {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem; 
-  } */
-
+.sectionCrupi {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
+.containerC {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* @media screen and (min-width: 768px) {
+ 
+
+} */
 
 .flexContainerC {
   display: flex;
@@ -566,7 +562,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
-  .centerButtonMobile {
+   .centerButtonMobile {
     display: flex;
     justify-content: center;
   }
@@ -604,4 +600,3 @@ h1 {
     margin-bottom: 1rem;
   }
 }
-
